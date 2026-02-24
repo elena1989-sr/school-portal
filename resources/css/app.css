@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom  */
+.btn-register {
+    background-color: #65e6d5;
+}
+
+.btn-register:hover {
+    background-color: #65e6d5;
+}
+
+.btn-login {
+    background-color: #e6a665;
+}
+
+.btn-login:hover {
+    background-color: #e6a665;
+}
+
+.bgcolor-login {
+    background-color: #429e9e;
+}
+
+.btn-login-submit {
+    background-color: #e6a665;
+}
+
+.bg-mint {
+    background-color: #429e9e;
+}
+
+.bg-orange {
+    background-color: #e6a665;
+}
+
+.color-white {
+    color: #ffffff;
+}
