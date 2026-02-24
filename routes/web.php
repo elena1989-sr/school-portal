@@ -9,17 +9,17 @@ use App\Http\Controllers\TeacherTestController;
 use App\Http\Controllers\TeacherSubjectController;
 use App\Http\Controllers\TeacherDashboardController;
 
-// Главна страница
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Dashboard (за сите auth корисници)
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-// Profile routes
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
